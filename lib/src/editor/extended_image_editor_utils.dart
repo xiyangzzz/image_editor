@@ -1,7 +1,7 @@
 import 'dart:math';
-import 'package:extended_image/src/extended_image_typedef.dart';
 import 'package:flutter/material.dart';
 
+import '../extended_image_typedef.dart';
 import '../extended_image_utils.dart';
 
 class EditActionDetails {

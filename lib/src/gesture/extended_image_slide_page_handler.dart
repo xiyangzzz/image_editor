@@ -1,5 +1,5 @@
-import 'package:extended_image/src/extended_image_typedef.dart';
 import 'package:flutter/material.dart';
+import '../extended_image_typedef.dart';
 import '../extended_image_utils.dart';
 import 'extended_image_gesture_utils.dart';
 import 'extended_image_slide_page.dart';

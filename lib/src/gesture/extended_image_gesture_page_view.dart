@@ -1,6 +1,7 @@
-import 'package:extended_image/extended_image.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+
+import '../../extended_image.dart';
 
 ///
 ///  extended_image_view.dart
@@ -94,7 +95,7 @@ class ExtendedImageGesturePageView extends StatefulWidget {
     CanMovePage? canMovePage,
     CanScrollPage? canScrollPage,
     required this.childrenDelegate,
-  })   : controller = controller ?? _defaultPageController,
+  })  : controller = controller ?? _defaultPageController,
         physics = _defaultScrollPhysics,
         canMovePage = canMovePage ?? _defaultCanMovePage,
         canScrollPage = canScrollPage ?? _defaultCanScrollPage,
