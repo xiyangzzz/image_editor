@@ -293,30 +293,30 @@ class ExtendedImageCropLayerState extends State<ExtendedImageCropLayer>
       case _MoveType.topLeft:
       case _MoveType.top:
       case _MoveType.left:
-        Offset topLeft = result!.topLeft + delta;
-        topLeft = Offset(min(topLeft.dx, result.right - gWidth * 2),
-            min(topLeft.dy, result.bottom - gWidth * 2));
-        result = Rect.fromPoints(topLeft, result.bottomRight);
+        // Offset topLeft = result!.topLeft + delta;
+        // topLeft = Offset(min(topLeft.dx, result.right - gWidth * 2),
+        //     min(topLeft.dy, result.bottom - gWidth * 2));
+        // result = Rect.fromPoints(topLeft, result.bottomRight);
         break;
       case _MoveType.topRight:
-        Offset topRight = result!.topRight + delta;
-        topRight = Offset(max(topRight.dx, result.left + gWidth * 2),
-            min(topRight.dy, result.bottom - gWidth * 2));
-        result = Rect.fromPoints(topRight, result.bottomLeft);
+        // Offset topRight = result!.topRight + delta;
+        // topRight = Offset(max(topRight.dx, result.left + gWidth * 2),
+        //     min(topRight.dy, result.bottom - gWidth * 2));
+        // result = Rect.fromPoints(topRight, result.bottomLeft);
         break;
       case _MoveType.bottomRight:
       case _MoveType.right:
       case _MoveType.bottom:
-        Offset bottomRight = result!.bottomRight + delta;
-        bottomRight = Offset(max(bottomRight.dx, result.left + gWidth * 2),
-            max(bottomRight.dy, result.top + gWidth * 2));
-        result = Rect.fromPoints(result.topLeft, bottomRight);
+        // Offset bottomRight = result!.bottomRight + delta;
+        // bottomRight = Offset(max(bottomRight.dx, result.left + gWidth * 2),
+        //     max(bottomRight.dy, result.top + gWidth * 2));
+        // result = Rect.fromPoints(result.topLeft, bottomRight);
         break;
       case _MoveType.bottomLeft:
-        Offset bottomLeft = result!.bottomLeft + delta;
-        bottomLeft = Offset(min(bottomLeft.dx, result.right - gWidth * 2),
-            max(bottomLeft.dy, result.top + gWidth * 2));
-        result = Rect.fromPoints(bottomLeft, result.topRight);
+        // Offset bottomLeft = result!.bottomLeft + delta;
+        // bottomLeft = Offset(min(bottomLeft.dx, result.right - gWidth * 2),
+        //     max(bottomLeft.dy, result.top + gWidth * 2));
+        // result = Rect.fromPoints(bottomLeft, result.topRight);
         break;
       default:
     }

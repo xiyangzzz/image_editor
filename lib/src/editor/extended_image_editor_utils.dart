@@ -100,11 +100,11 @@ class EditActionDetails {
     /// take care of boundary
     final Rect newCropRect = getDestinationRect(
       rect: layoutRect,
-      inputSize: Size(cropRect!.height, cropRect!.width),
+      inputSize: Size(cropRect!.width, cropRect!.height),
       fit: fit,
     );
 
-    final double scale = newCropRect.width / cropRect!.height;
+    final double scale = newCropRect.height / cropRect!.height;
 
     Rect newScreenDestinationRect =
         rotateRect(screenDestinationRect!, screenCropRect!.center, angle);
