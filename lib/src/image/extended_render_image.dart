@@ -1,10 +1,11 @@
 import 'dart:math';
 import 'dart:ui' as ui show Image;
-import 'package:extended_image/src/editor/extended_image_editor_utils.dart';
-import 'package:extended_image/src/gesture/extended_image_gesture_utils.dart';
-import 'package:extended_image/src/extended_image_typedef.dart';
 import 'package:flutter/material.dart' hide Image;
 import 'package:flutter/rendering.dart';
+
+import '../editor/extended_image_editor_utils.dart';
+import '../extended_image_typedef.dart';
+import '../gesture/extended_image_gesture_utils.dart';
 
 class ExtendedRenderImage extends RenderBox {
   /// Creates a render box that displays an image.
