@@ -32,7 +32,8 @@ class EditActionDetails {
   double? _cropAspectRatio;
   double? get cropAspectRatio {
     if (_cropAspectRatio != null) {
-      return isHalfPi ? 1.0 / _cropAspectRatio! : _cropAspectRatio;
+      // return isHalfPi ? 1.0 / _cropAspectRatio! : _cropAspectRatio;
+      return _cropAspectRatio!;
     }
     return null;
   }
